@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Assignment 4: CSIT 281 - JavaScript</title>
+
+<style>
+
+</style>
+
+</head>
+<body>
+
+   <script type="text/javascript">
+
+   // Create an array called monthsOfTheYear that includes all 12 months.
+   // Create a switch statement that returns a string with how many days
+   // are in each month based on which month is chosen. Have it print the
+   // string statement using document.write for each month. It should print
+   // out a sentence similar to:
+   // 'February has 28 days except on leap years when it has 29.'
+   // We will be expanding on this assignment in a future video.
+   // For now, have the variable you create in the switch set to January.
+
+   monthsOfTheYear = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+   function daysInAMonth(month) {
+     switch (month) {
+       case 'January':
+        document.write('January has 31 days.');
+        break;
+       case 'February':
+        document.write('February has 28 days except on leap years when it has 29.');
+        break;
+       case 'March':
+        document.write('March has 31 days.');
+        break;
+       case 'April':
+        document.write('April has 30 days.');
+        break;
+       case 'May':
+        document.write('May has 31 days.');
+        break;
+       case 'June':
+        document.write('June has 30 days.');
+        break;
+       case 'July':
+        document.write('July has 31 days.');
+        break;
+       case 'August':
+        document.write('August has 31 days.');
+        break;
+       case 'September':
+        document.write('September has 30 days.');
+        break;
+       case 'October':
+        document.write('October has 31 days.');
+        break;
+       case 'November':
+        document.write('November has 30 days.');
+        break;
+       case 'December':
+        document.write('December has 31 days.');
+        break;
+       default:
+        document.write('Invalid month.')
+     }
+   }
+
+   daysInAMonth(monthsOfTheYear[0]);
+
+   </script>
+
+</body>
+</html>
