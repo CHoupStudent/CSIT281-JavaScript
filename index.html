@@ -15,6 +15,10 @@
         /* border: solid 1px #CC0000; */
       }
 
+      .page-title {
+        color: #00CCCC;
+      }
+
     </style>
   </head>
 
@@ -32,8 +36,59 @@
       var x = 4;
 
       console.log(4);
-
       console.log(x);
+
+      let z = true;
+      z = false;
+
+      if (z === true) {
+        console.log("You can see the game!");
+      }
+
+      if (z === false) {
+        console.log("Not old enough.");
+      }
+      </script>
+
+
+
+      <script>
+
+      let pageView = 0;
+      let pageTitle = "My Page Title";
+      let pageAuthor = "Chris";
+
+      function pageTitles(){
+        document.write(pageTitle + "<br />");
+      }
+
+      function pageViews(){
+        pageView++;
+        document.write(pageView);
+      }
+
+      function pageAuthors(){
+        document.write(pageAuthor);
+      }
+      </script>
+
+      <h1 class="page-title"><script>pageTitles();</script></h1>
+      <p>by: <script>pageAuthors();</script></p>
+      <small><script>pageViews();</script></small>
+
+
+
+
+
+
+      <script>
+      function myAlert(){
+        for(let i = 0; i <= 3; i++) {
+          alert("Oh no!");
+        }
+        alert("Finally over.")
+      }
+      // myAlert();
 
     </script>
 
